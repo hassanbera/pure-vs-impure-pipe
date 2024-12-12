@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'pure-vs-impure-pipe';
+  numbers:number[]=[1,2,3]
+
+
+  addNumber(){
+    this.numbers.push(this.numbers.length+1)
+    console.log("Yeni sayı eklendi", this.numbers);
+  }
+
+
 }
+
